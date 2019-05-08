@@ -1,11 +1,34 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <!--
+manifest에서 Theme로 사용 할 스타일을 만듭니다.
+ActionBar 스타일 적용하기위해 android:actionBarStyle 아이템을 추가합니다.
+-->
+    <!--<style name="CustomActionBarTheme" parent="Theme.AppCompat.Light">-->
+        <!--<item name="android:actionBarStyle">@style/CustomActionBar</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash;-->
+    <!--ActionBar 스타일에 사용 할 style을 추가합니다.-->
+    <!--ActionBar의 타이틀에 스타일을 적용하기위해 android:titleTextStyle 아이템을 추가합니다.-->
+    <!--&ndash;&gt;-->
+    <!--<style name="CustomActionBar" parent="android:style/Widget.Holo.ActionBar">-->
+        <!--<item name="android:titleTextStyle">@style/CustomActionBarTitleText</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash;-->
+    <!--ActionBar의 타이틀에 적용 할 스타일 아이템을 추가합니다.-->
+    <!--&ndash;&gt;-->
+    <!--<style name="CustomActionBarTitleText" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">-->
+        <!--<item name="android:textColor">@color/textThemeDark</item>-->
+    <!--</style>-->
 
 </resources>
